@@ -95,7 +95,7 @@ git commit -a -m "将已经暂存过得文件一起提交，跳过git add 步骤
   - git status -short // 查看文件状态 简略信息
 - git add // 跟踪·暂存文件
   - git add . // 跟踪·暂存全部
-  - git add <文件并> // 跟踪具体文件
+  - git add <文件名> // 跟踪具体文件
 - git diff // 查看相关文件修改
   - git diff --staged // 查看 上一次 `commit`和最后一次 `git add` 暂存后的文件变化
   - git diff --cached // 查看 已经暂存起来的变化，最后一次 `git add`暂存后的变化，未暂存的不展示
