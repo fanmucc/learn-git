@@ -49,3 +49,12 @@
 1. 基于错误分支创建一个新分支
 2. 通过`git reset`撤销相关`commit`提交
 3. 进入新分支继续开发
+
+#### 回退撤销
+
+- `git reflog` // 查看修改 HEAD 指针的修改记录
+
+![gif reflog展示]('../assets/git_reflog.png')
+
+回退:
+`git reset --hard commitid`
