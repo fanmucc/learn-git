@@ -29,8 +29,18 @@
 
   `git fetch` 更新远程分支， 如果别人`push`了一个新分支到远程，可以根据此命令更新获取到最新的远程分支和提交
 
-  
+  ##### 跟踪分支
+
+  从远程分支检出一个本地分支，并跟踪远程分支，远程分支有变可以通过`git pull`来更新最新代码
+
+  `git checkout -b remote orgin/remote`  即 `git checkout -b 本地分支名 origin/远程分支名` 本地分支名可以不与远程分支名一致
+
+  或
+
+  `git checkout --track origin/远程分支名`
 
   
 
-  
+   ##### 本地分支跟踪远程分支
+
+   `git branch --set=upstream-to 远程分支名` 本地分支建立与远程分支的个跟踪
