@@ -54,7 +54,7 @@
 
 - `git reflog` // 查看修改 HEAD 指针的修改记录
 
-![gif reflog展示]('/assets/git_reflog.png')
+![gif reflog展示](../assets/git_reflog.png)
 
 回退:
 `git reset --hard commitid`
