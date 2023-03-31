@@ -43,4 +43,15 @@
 
    ##### 本地分支跟踪远程分支
 
-   `git branch --set=upstream-to 远程分支名` 本地分支建立与远程分支的个跟踪
+   `git branch --set-upstream-to 远程分支名` 本地分支建立与远程分支的个跟踪
+
+ #### 本地分支push到远程
+
+`git push --set-upstream origin 远程分支名`
+
+#### 删除远端分支
+
+`git branch -dr origin/远程分支` // 取消跟踪远程分支
+
+`git push origin -d 或 --delete 分支名` // 删除远程分支
+
