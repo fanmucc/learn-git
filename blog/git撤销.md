@@ -12,7 +12,7 @@
 
 2. `git revert commitid --no-edit` // 不填写 commit 信息，使用 git 自动生成的提交信息 注： 产生新的提交
 
-3. `git revert commitid --no-commit` // 不进行 commit 提交，只抵消暂存区和工作区的文件变化。 注：不产生新的提交。
+3. `git revert commitid --no-commit` // 不进行 commit 提交，只抵消暂存区和工作区的文件变化。 注：产生新的提交。
 
 需要注意的是，如果撤销的记录不是最新提交的，可能会需要解决冲突才能，继续`commit`和`push`
 
