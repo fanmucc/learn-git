@@ -7,7 +7,9 @@
   - `git branch -r` 或 `git branch --remote` // 查看远程分支
   - `git branch -a` 或 `git branch --all` // 查看所有分支
   - `git branch -l` 或 `git branch --list` // 查看所有的本地分支
-
+  - `git branch -v`  查看每一个分支的最后一次提交
+  - `git branch -vv` 将所有的本地分支列出来并且包含更多的信息，如每一个分支正在跟踪哪个远程分支与本地分支是否是领先、落后或是都有
+  
 - 创建和切换分支
   - `git branch 分支名`  // 创建分支
   - `git checkout 分支名`  // 切换分支
@@ -31,6 +33,8 @@
 
   ##### 跟踪分支
 
+  `git fetch --all` 跟新所有远程库
+
   从远程分支检出一个本地分支，并跟踪远程分支，远程分支有变可以通过`git pull`来更新最新代码
 
   `git checkout -b remote orgin/remote`  即 `git checkout -b 本地分支名 origin/远程分支名` 本地分支名可以不与远程分支名一致
@@ -42,7 +46,7 @@
   
 
    ##### 本地分支跟踪远程分支
-
+  
    `git branch --set-upstream-to 远程分支名` 本地分支建立与远程分支的个跟踪
 
  #### 本地分支push到远程
@@ -54,4 +58,6 @@
 `git branch -dr origin/远程分支` // 取消跟踪远程分支
 
 `git push origin -d 或 --delete 分支名` // 删除远程分支
+
+`git push origin :origin/分支名` // 删除分支的简单写法
 
